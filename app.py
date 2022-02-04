@@ -34,7 +34,7 @@ def result():
 
 #parameters
 
-args={'prototxt':'models\colorization_deploy_v2.prototxt','model':'models\colorization_release_v2.caffemodel','points':'models\pts_in_hull.npy'}
+args={'prototxt':'colorization_deploy_v2.prototxt','model':'colorization_release_v2.caffemodel','points':'pts_in_hull.npy'}
 #Model loading...
 net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
 pts = np.load(args["points"])
