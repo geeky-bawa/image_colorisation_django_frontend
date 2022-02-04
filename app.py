@@ -36,7 +36,7 @@ def result():
 
 args={'prototxt':'colorization_deploy_v2.prototxt','model':'colorization_release_v2.caffemodel','points':'pts_in_hull.npy'}
 #Model loading...
-net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
+net = cv2.dnn.readNetFromCaffe( args["model"],args["prototxt"])
 pts = np.load(args["points"])
 class8 = net.getLayerId("class8_ab")
 conv8 = net.getLayerId("conv8_313_rh")
