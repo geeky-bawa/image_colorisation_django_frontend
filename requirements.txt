@@ -9,7 +9,4 @@ requests==2.27.1
 scikit_image==0.17.2
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.8.1+cpu 
-torchvision==0.9.1+cpu
-fastai>=2.3.1
-ipywidgets
-voila
+
